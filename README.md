@@ -1,9 +1,9 @@
 # cs210-assignment01
-_Woo_Matthew_Assignment01_
+>Woo_Matthew_Assignment01
 ## Explanation:
-twoSumBruteForce() find the two indices of the values that can add up to the target by going through each value and checking it with the values after it. For example, {2, 7, 11, 15} and target = 9, i = 0 and it runs through each one after it to see if they add up to the target.
+__twoSumBruteForce()__ find the two indices of the values that can add up to the target by going through each value and checking it with the values after it. For example, {2, 7, 11, 15} and target = 9, i = 0 and it runs through each one after it to see if they add up to the target.
 
-twoSumHash() find the two indices of the values that can add up to the target by looking at the target and the current value and seeing what it needs. If it is not found, then put the current number as the key and the current index as the value in the map. In the next index, find a new needed by subtracting the target and the current nums[i] value. If needed is in the map, then return the current index and the index stored in the map.
+__twoSumHash()__ find the two indices of the values that can add up to the target by looking at the target and the current value and seeing what it needs. If it is not found, then put the current number as the key and the current index as the value in the map. In the next index, find a new needed by subtracting the target and the current nums[i] value. If needed is in the map, then return the current index and the index stored in the map.
 
 ## Test/output evidence:
 nums = {15, 4, 18, 8, 19, 22, 24, 59, 59, 20, 18, 12, 36, 42, 9}
@@ -108,6 +108,7 @@ This is not valid
 
 ## Complexity discussion:
 Brute Force version used two forloop, so the worst case is go through every value and solution is at the end. The time complexity is O(n^2) since it is a nested forloop and the space complexity is O(1) since it didn’t take too much extra memory.
+
 Hash version time complexity is O(n) since the time it goes through the vector once. The space complexity is also O(n) because the map can store up to the size of the vector.
 
 ## Code:
