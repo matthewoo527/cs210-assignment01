@@ -6,6 +6,7 @@ __twoSumBruteForce()__ find the two indices of the values that can add up to the
 __twoSumHash()__ find the two indices of the values that can add up to the target by looking at the target and the current value and seeing what it needs. If it is not found, then put the current number as the key and the current index as the value in the map. In the next index, find a new needed by subtracting the target and the current nums[i] value. If needed is in the map, then return the current index and the index stored in the map.
 
 ## Test/output evidence:
+```
 nums = {15, 4, 18, 8, 19, 22, 24, 59, 59, 20, 18, 12, 36, 42, 9}
 
 Target: 24
@@ -197,7 +198,7 @@ No Solution
 
 This is not valid
 
-
+```
 ## Complexity discussion:
 Brute Force version used two forloop, so the worst case is go through every value and solution is at the end. The time complexity is O(n^2) since it is a nested forloop and the space complexity is O(1) since it didn’t take too much extra memory.
 
