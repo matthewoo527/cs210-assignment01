@@ -18,7 +18,7 @@ using namespace std;
 
 pair<int,int> twoSumBruteForce(const vector<int>& nums, int target) {
     for (int i = 0; i < nums.size(); ++i) {
-        for(int j = 0; j < nums.size(); ++j) {
+        for(int j = i + 1; j < nums.size(); ++j) {
             if (nums[i] + nums[j] == target) {
                 return {i, j};
             }
@@ -127,4 +127,6 @@ int main() {
     test({0, 10, 80, 60, 50, 30, 90, 100, 20}, 100);
     //Additional Test Case 6
     test({2, 7, 11, 15}, 10);
+    //Additional Test Case 7
+    test({2, 2}, 4);
 }
